@@ -12,11 +12,11 @@ body {
 
 /* HEADER */
 .header {
-  border-bottom: solid aqua 2px;
+  border-bottom: solid #32b9cd 2px;
 }
 
 .header .container .titulo {
-  color: aqua;
+  color: #32b9cd;
 }
 
 .container .navbar {
@@ -34,7 +34,7 @@ body {
 
 .navbar .agora {
   font-weight: 800;
-  text-decoration: underline;
+  font-size: 18px;
 }
 
 .container {
@@ -55,6 +55,8 @@ body {
   height: 500px;
   color: white;
   width: 100%;
+  padding: 60px 0px;
+  background-size: cover;
 }
 .banner .container {
   width: 500px;
@@ -72,12 +74,12 @@ body {
 /* SOCIAL */
 
 .social {
-  background-color: white;
+  background-color: #e5e5e5;
 }
 
 .boxes {
   display: flex;
-  padding: 20px 0px;
+  padding: 60px 0px;
   width: 100%;
   justify-content: space-evenly;
 }
@@ -89,21 +91,22 @@ body {
 }
 
 .box img {
-  width: 100px;
+  width: 150px;
 }
 
 .box h4 {
-  color: crimson;
-  font-weight: 600;
+  color: #f21667;
+  font-weight: 900;
 }
 
 .box p {
   text-align: center;
+  color: black;
 }
 
 /* |FOOTER */
 .footer {
-  background-color: darkcyan;
+  background-color: #32b9cd;
 }
 
 .footer .container {
@@ -116,27 +119,31 @@ body {
 /* LOGIN */
 .login {
   background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
+  background-size: cover;
   color: white;
   width: 100%;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px 0px;
 }
-.card-login {
+.card {
   width: 50%;
   margin: auto;
-  background-color: gainsboro;
+  background-color: #e5e5e5;
   border-radius: 10px;
-  padding: 10px 40px;
+  padding: 10px 60px;
 }
 
-.card-login h2 {
-  color: crimson;
+.card h2 {
+  color: #f21667;
   text-align: center;
+  font-size: 28px;
+  margin: 0;
 }
 
-.card-login .formulario {
+.card .formulario {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -149,12 +156,52 @@ body {
 }
 
 .formulario .campo span {
-  color: crimson;
+  color: #f21667;
+  font-weight: 600;
 }
 
 .formulario .campo input {
   width: 100%;
-  border: 1px solid aqua;
+  border: 2px solid #32b9cd;
   border-radius: 10px;
   padding: 10px;
+  text-align: center;
+}
+
+.botao {
+  color: white;
+  font-size: 16px;
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 40px;
+  background-color: #f21667;
+  font-weight: 600;
+  border-radius: 10px;
+  align-self: center;
+}
+
+/* CADASTRO */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* SIMULADOR */
+
+.simulador {
+  background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+}
+
+.simulador .container {
+  flex-direction: column;
 }
